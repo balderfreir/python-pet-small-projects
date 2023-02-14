@@ -1,13 +1,12 @@
 import cv2
-
-# read the QRCODE image
+# читаем наше изображение
 image = cv2.imread("vk_qr.png")
-# initialize the cv2 QRCode detector
+# инициализируем cv2 QRCode detector
 detector = cv2.QRCodeDetector()
-# detect and decode
-data, vertices_array, binary_qrcode = detector.detectAndDecode(image)
+# определяем qr и декодируем его
+data, p_array, b_qrcode = detector.detectAndDecode(image)
 # if there is a QR code print the data
-if vertices_array is not None:
-    print("QRCode data:", data)
+if p_array is not None:
+    print("Закодировано:", data)
 else:
-    print("There was some error")
+    print("Кажется тут нету QR")
