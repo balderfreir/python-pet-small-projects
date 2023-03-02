@@ -1,7 +1,7 @@
 from collections import Counter
 text = []
 # открываем и читаем фаил
-with open('the_fellowship_of_the_ring.txt', 'r') as f:
+with open('th_felowshp_of_te_rng.txt', 'r') as f:
     for line in f:
         # записываем каждую строку в список,
         # предварительно разбив ее на слова

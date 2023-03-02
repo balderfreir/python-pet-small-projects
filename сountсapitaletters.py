@@ -1,4 +1,4 @@
-with open('the_fellowship_of_the_ring.txt') as file:
+with open('th_felowshp_of_te_rng.txt') as file:
     # создаем счетчик
     count = 0
     # заносим весь текст в переменную
