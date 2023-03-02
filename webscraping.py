@@ -24,7 +24,7 @@ with open("Jackie_Chan_filmography.csv", "wt+", newline="") as f:
 
 import pandas as pd
 # посмотрим что получилось
-a = pd.read_csv("Jackie_Chan_filmography.csv", names=['year', 'drop_it', 'name_ru', 'name_chi', 'role'])
+a = pd.read_csv("Jackie_Chan_filmography.csv",
+                names=['year', 'drop_it', 'name_ru', 'name_chi', 'role'])
 a.drop(columns=['drop_it', 'name_chi'], inplace=True)
-print(a.info())
-print(a.head(), a.tail(), sep='\n')
+print(a.head(3), a.tail(3), sep='\n')

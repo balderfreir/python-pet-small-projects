@@ -1,8 +1,8 @@
-def count_characters(string):
+def count_characters(str):
     """Не учитывает регистр или пробелы,
     т.е. Е != е и ' ' - так же отдельный символ"""
     counter = {}  # создаем словать
-    for ch in string:  # идем по каждому эл строки
+    for ch in str:  # идем по каждому эл строки
         # если он есть в словаре, увеличиваем значение
         if ch in counter:
             counter[ch] += 1
