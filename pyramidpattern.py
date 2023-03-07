@@ -1,10 +1,15 @@
+# объявляем рисовалку пирамидок
 def pyramid_pattern(char='*', n=7):
+    # проходимся циклом в заданом диапазоне
     for i in range(n):
+        # кол-во отступов и звезд зависит от шага
         print(' ' * (n - i) + char * (i * 2 + 1))
-
-def pyramid_pattern_v2(char='*', n=7):
+# и вторую! я сегодня щедрый...
+def pyramid_pattern_v2(char='*', n=5):
     for i in range(n):
+        # тут к звезде надо добавить пробел
         print(' ' * (n - i) + (char + ' ') * (i + 1))
-
+# запускаем функции с параметрами по умолчанию
 pyramid_pattern()
-pyramid_pattern_v2()
+# а тут задаем высоту пирамидки
+pyramid_pattern_v2(n=7)
