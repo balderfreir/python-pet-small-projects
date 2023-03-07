@@ -1,4 +1,4 @@
-def palindrome(sentence):
+def palindrome_words(sentence):
     # ищем знаки препинания и убераем их
     for i in (",.'?/><}{{}}'"):
         sentence = sentence.replace(i, "")
@@ -15,4 +15,4 @@ def palindrome(sentence):
 
 sen = input("Enter a sentence : ")
 #  LOL, My interview went good. My Mom will be so happy.
-print(palindrome(sen))
+print(palindrome_words(sen))
