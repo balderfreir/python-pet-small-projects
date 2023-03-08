@@ -1,5 +1,4 @@
 def validate_anagrams(a=None, b=None):
-    ans = ''
     # проверяем, введены ли значения
     if not a or not b:
         ans = 'Ты шо то забыл...'
@@ -11,10 +10,11 @@ def validate_anagrams(a=None, b=None):
         ans = 'Да это же анаграмы!!!'
     else:
         ans = 'Не анаграмы...'
-    return ans
+    return f'a = {a},b = {b} ---> {ans}'
 
 print(validate_anagrams("cinema"))
 print(validate_anagrams("cool", "loco"))
 print(validate_anagrams("men", "women"))
 print(validate_anagrams("Finger", "finger"))
 print(validate_anagrams("cinema", "iceman"))
+
