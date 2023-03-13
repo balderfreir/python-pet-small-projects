@@ -5,7 +5,6 @@ r = 6371
 # Конвертация из градусов в радианы
 def deg_to_rad(degrees):
     return degrees * (np.pi/180)
-
 # непосредственно считаем расстояние между двумя точками
 def dist_calculate(lat1, lon1, lat2, lon2):
     d_lat = deg_to_rad(lat2-lat1)
